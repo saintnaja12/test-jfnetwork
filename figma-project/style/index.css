@@ -1,0 +1,87 @@
+
+
+@font-face {
+    font-family: 'font-medium';
+    src: url('../assets/font/Manrope/static/Manrope-Medium.ttf') format('ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'font-semi-bold';
+    src: url('../assets/font/Manrope/static/Manrope-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'font-bold';
+    src: url('../assets/font/Manrope/static/Manrope-Bold.ttf') format('ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'font-extra-bold';
+    src: url('../assets/font/Manrope/static/Manrope-ExtraBold.ttf') format('ttf');
+    font-weight: 800;
+}
+
+.table-head {
+    font-family: 'font-extra-bold', sans-serif;
+    font-weight: 800;
+    display: flex;
+}
+
+table {
+    font-size: 14px;
+    font-family: 'font-bold', sans-serif;
+    font-weight: 700;
+    border-collapse: collapse;
+    width: 100%;
+    color: #1F2937;
+}
+thead {
+    font-family: 'font-extra-bold', sans-serif;
+    font-weight: 800;
+}
+.child {
+    font-family: 'font-medium', sans-serif;
+    font-weight: 500;
+}
+.child-time {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+td {
+    padding: 5px;
+    text-align: left;
+    padding: 4px 16px 4px 16px;
+}
+th {
+    text-align: left;
+    padding: 4px 16px 4px 16px;
+    border-bottom: 2px solid #111827;
+}
+.day-time {
+    text-align: center;
+}
+
+.tr-1 {
+    background-color: #E5E7EB;
+    /* border-bottom: 1px solid #D6D9DF; */
+}
+.tr-2 {
+    background-color: #F3F4F6;
+    /* border-bottom: 1px solid #D6D9DF; */
+}
+
+.chip-time {
+    color: #FFF;
+    background-color: #4b5563;
+    padding: 8px 12px;
+    border-radius: 9999px;
+}
+@media screen and (max-width: 1440px) {
+
+}

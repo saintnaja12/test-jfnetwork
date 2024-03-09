@@ -1,0 +1,160 @@
+[
+    {
+        "Team": "U8 mix",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "15:30",
+                "EndTime": "16:45",
+                "Hall": "Deusterschule Kitzingen"
+            }
+        ]
+    },
+    {
+        "Team": "U10 mix",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "17:00",
+                "EndTime": "18:30",
+                "Hall": "Deusterschule Kitzingen"
+            },
+            {
+                "Day": "Thursday",
+                "StartTime": "16:45",
+                "EndTime": "18:15",
+                "Hall": "Deusterschule Kitzingen"
+            }
+        ]
+    },
+    {
+        "Team": "U12 mix",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "17:35",
+                "EndTime": "18:45",
+                "Hall": "Mainstockheim"
+            },
+            {
+                "Day": "Thursday",
+                "StartTime": "11:00",
+                "EndTime": "12:30",
+                "Hall": "Mainstockheim"
+            }
+        ]
+    },
+    {
+        "Team": "U14 m",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "16:30",
+                "EndTime": "18:30",
+                "Hall": "Arena Kitzingen"
+            },
+            {
+                "Day": "Thursday",
+                "StartTime": "17:00",
+                "EndTime": "18:30",
+                "Hall": "Arena Kitzingen"
+            }
+        ]
+    },
+    {
+        "Team": "U14 w",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "17:00",
+                "EndTime": "18:30",
+                "Hall": "Arena Kitzingen"
+            },
+            {
+                "Day": "Thursday",
+                "StartTime": "18:30",
+                "EndTime": "20:30",
+                "Hall": "Arena Kitzingen"
+            }
+        ]
+    },
+    {
+        "Team": "U16 m",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "16:30",
+                "EndTime": "18:30",
+                "Hall": "Arena Kitzingen"
+            },
+            {
+                "Day": "Thursday",
+                "StartTime": "18:30",
+                "EndTime": "20:00",
+                "Hall": "Arena Kitzingen"
+            }
+        ]
+    },
+    {
+        "Team": "U18/20 Damon",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "18:30",
+                "EndTime": "20:00",
+                "Hall": "Arena Kitzingen"
+            },
+            {
+                "Day": "Thursday",
+                "StartTime": "18:30",
+                "EndTime": "20:30",
+                "Hall": "Arena Kitzingen"
+            }
+        ]
+    },
+    {
+        "Team": "U18 m",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "20:30",
+                "EndTime": "22:00",
+                "Hall": "Arena Kitzingen"
+            },
+            {
+                "Day": "Thursday",
+                "StartTime": "18:30",
+                "EndTime": "20:00",
+                "Hall": "Arena Kitzingen"
+            }
+        ]
+    },
+    {
+        "Team": "U20 / Men",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "20:30",
+                "EndTime": "22:00",
+                "Hall": "Arena Kitzingen"
+            },
+            {
+                "Day": "Thursday",
+                "StartTime": "20:00",
+                "EndTime": "21:30",
+                "Hall": "Arena Kitzingen"
+            }
+        ]
+    },
+    {
+        "Team": "OPEN COURT",
+        "Child": [
+            {
+                "Day": "Thursday",
+                "StartTime": "15:00",
+                "EndTime": "16:00",
+                "Hall": "Arena Kitzingen"
+            }
+        ]
+    }
+]
