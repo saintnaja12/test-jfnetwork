@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from "react";
+
+import { Epilogue } from "next/font/google";
+
+const epilogue = Epilogue({ subsets: ["latin"] });
+
 import Chip from "./chip";
 
 export default function Table(props) {
@@ -69,7 +74,10 @@ export default function Table(props) {
                 <>
                     {dataList.map((item, index) => (
                         <React.Fragment key={index}>
-                            <tr className={index % 2 === 0 ? 'display-min bg-a-gray-E5E7EB' : 'display-min bg-a-gray-F3F4F6'}>
+                            <tr className={`
+                                ${index % 2 === 0 ? 'display-min bg-a-gray-E5E7EB' : 'display-min bg-a-gray-F3F4F6'}
+                                ${epilogue.className}`}
+                            >
                                 <td rowSpan={item.Child.length == 1 ? item.Child.length : item.Child.length - 1} colSpan={3} className="font-bold">
                                     {item.Team}
                                 </td>
