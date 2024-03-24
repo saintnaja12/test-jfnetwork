@@ -16,19 +16,19 @@ export default function Table(props) {
         if(dataHead && dataHead.length > 0){
             return (
                 <>
-                    <thead className="font-extrabold">
-                        <tr className="display-max border-b border-a-black-111827">
+                    <thead className="text-sm">
+                        <tr className="h-9 display-max  border-b border-a-black-111827">
                             {dataHead.map((item, index) => (
-                                <th key={index} className={item.style}>
+                                <th key={index} className={`${item.style} font-extrabold`}>
                                     {item.text}
                                 </th>
                             ))}
                         </tr>
-                        <tr className="display-min border-b border-a-black-111827">
+                        <tr className="h-9 display-min border-b border-a-black-111827">
                             {dataHead.map((item, index) => (
                                 index > 0
                                 ? (
-                                    <th key={index} className={item.style}>{item.text}</th>
+                                    <th key={index} className={`s-1440:${item.style} font-extrabold`}>{item.text}</th>
                                 )
                                 : ('')
                             ))}
@@ -48,11 +48,11 @@ export default function Table(props) {
                 {
                     item.Child.map((child, indexChild) => (
                         indexChild > 0 ? (
-                            <tr key={indexChild} className={index % 2 === 0 ? 'bg-a-gray-E5E7EB' : 'bg-a-gray-F3F4F6'}>
-                                <td>
+                            <tr key={indexChild} className={`text-sm ${index % 2 === 0 ? 'bg-a-gray-E5E7EB' : 'bg-a-gray-F3F4F6'}`}>
+                                <td >
                                     {child.Day}
                                 </td>
-                                <td className="flex justify-center items-center gap-4">
+                                <td className="flex s-1440:justify-center items-center gap-4">
                                     <Chip data={child.StartTime} />
                                     <span> - </span>
                                     <Chip data={child.EndTime} />
@@ -75,26 +75,29 @@ export default function Table(props) {
                     {dataList.map((item, index) => (
                         <React.Fragment key={index}>
                             <tr className={`
-                                ${index % 2 === 0 ? 'display-min bg-a-gray-E5E7EB' : 'display-min bg-a-gray-F3F4F6'}
+                                ${`h-[34px] display-min text-base font-bold ${index % 2 === 0 ? 'bg-a-gray-E5E7EB' : 'bg-a-gray-F3F4F6'}`}
                                 ${epilogue.className}`}
                             >
-                                <td rowSpan={item.Child.length == 1 ? item.Child.length : item.Child.length - 1} colSpan={3} className="font-bold">
+                                <td rowSpan={item.Child.length == 1 ? item.Child.length : item.Child.length - 1} colSpan={3}>
                                     {item.Team}
                                 </td>
                             </tr>
-                            <tr className={index % 2 === 0 ? 'bg-a-gray-E5E7EB' : 'bg-a-gray-F3F4F6'}>
+                            <tr className={`h-[34px] font-medium text-sm
+                                ${index % 2 === 0 ? 'bg-a-gray-E5E7EB' : 'bg-a-gray-F3F4F6'}
+                                ${item.Child.length > 1 ? 'border-b border-a-gray-D6D9DF' : ''}`}
+                            >
                                 <td rowSpan={item.Child.length} className="display-max font-bold">
                                     {item.Team}
                                 </td>
-                                <td className={item.Child.length > 1 ? 'border-b border-a-gray-D6D9DF' : ''}>
+                                <td>
                                     {item.Child[0].Day}
                                 </td>
-                                <td className={item.Child.length > 1 ? 'flex justify-center items-center gap-4 border-b border-a-gray-D6D9DF' : 'flex justify-center items-center gap-4'}>
+                                <td className={`flex s-1440:justify-center items-center gap-4`}>
                                     <Chip data={item.Child[0].StartTime} />
                                     <span> - </span>
                                     <Chip data={item.Child[0].EndTime} />
                                 </td>
-                                <td className={item.Child.length > 1 ? 'border-b border-a-gray-D6D9DF' : ''}>
+                                <td>
                                     {item.Child[0].Hall}
                                 </td>
                             </tr>
@@ -110,7 +113,7 @@ export default function Table(props) {
 
     return (
         <>
-            <table className="w-full text-a-black-1F2937 text-14 border-collapse">
+            <table className="w-full text-a-black-1F2937 border-collapse">
                 <TableHead />
                 <tbody className="">
                     <TableBody />

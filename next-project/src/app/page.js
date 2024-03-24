@@ -15,7 +15,7 @@ export default function Home() {
             },
             {
                 "text": 'Day',
-                "style": 'text-center'
+                "style": ''
             },
             {
                 "text": 'Time',
